@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SINOTRANSI株式会社 | 物流・贸易・IT解决方案</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            color: #333;
+            background-color: #fff;
+        }
+
+        /* 导航栏 */
+        header {
+            background: #fff;
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #004098; /* 企业蓝 */
+            text-decoration: none;
+        }
+
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #004098;
+        }
+
+        /* 核心横幅 */
+        .hero {
+            background: linear-gradient(rgba(0,64,152,0.8), rgba(0,64,152,0.8)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* 内容板块 */
+        .section {
+            padding: 80px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 50px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: #004098;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* 业务介绍卡片 */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            padding: 30px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .service-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            border-color: #004098;
+        }
+
+        .service-card h3 {
+            color: #004098;
+            margin-top: 0;
+        }
+
+        /* 公司概要表格 */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .info-table th, .info-table td {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            text-align: left;
+        }
+
+        .info-table th {
+            width: 30%;
+            background-color: #f9f9f9;
+        }
+
+        /* 页脚 */
+        footer {
+            background: #333;
+            color: white;
+            padding: 40px 10%;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            header { flex-direction: column; }
+            nav { margin-top: 15px; }
+            nav a { margin: 0 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="#" class="logo">SINOTRANSI</a>
+    <nav>
+        <a href="#about">会社概要</a>
+        <a href="#services">事业内容</a>
+        <a href="#contact">お問い合わせ</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>连接全球，创造价值</h1>
+        <p>专业、高效、可靠的跨国物流与贸易伙伴</p>
+    </div>
+</div>
+
+<section id="services" class="section">
+    <h2 class="section-title">事业内容</h2>
+    <div class="services">
+        <div class="service-card">
+            <h3>国际物流服务</h3>
+            <p>提供覆盖全球的综合物流解决方案，包括海运、空运及陆运。优化供应链成本，确保货物安全送达。</p>
+        </div>
+        <div class="service-card">
+            <h3>贸易代理</h3>
+            <p>跨国贸易咨询与进出口代理服务，协助客户处理通关事务及市场准入支持。</p>
+        </div>
+        <div class="service-card">
+            <h3>IT技术支持</h3>
+            <p>结合物流行业的数字化转型需求，提供定制化的IT管理系统与电商平台API对接服务。</p>
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section" style="background-color: #fcfcfc;">
+    <h2 class="section-title">会社概要</h2>
+    <table class="info-table">
+        <tr>
+            <th>会社名</th>
+            <td>SINOTRANSI株式会社</td>
+        </tr>
+        <tr>
+            <th>所在地</th>
+            <td>大阪府大阪市（具体地址待填充）</td>
+        </tr>
+        <tr>
+            <th>事业内容</th>
+            <td>国际货运代理、进出口贸易、IT系统开发与维护</td>
+        </tr>
+        <tr>
+            <th>主要交易银行</th>
+            <td>三菱UFJ银行 / 三井住友银行</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">お問い合わせ</h2>
+    <div style="text-align: center;">
+        <p>业务咨询及合作，请通过以下方式联系我们：</p>
+        <p style="font-size: 20px; color: #004098; font-weight: bold;">Email: info@sinotransi.jp</p>
+        <p>营业时间：周一至周五 9:00 - 18:00</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 SINOTRANSI株式会社 All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
