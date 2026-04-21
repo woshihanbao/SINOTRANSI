@@ -6,6 +6,11 @@
     <title>SINOTRANS株式会社 | 连接中日·高效流转</title>
     <meta name="description" content="SINOTRANS株式会社 - 专业的国际空运与电商货物清关服务，连接中日物流。" />
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favio.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="favio.ico" />
+    <link rel="apple-touch-icon" href="favio.png" />
+
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -196,17 +201,33 @@
             margin-bottom: 1rem;
         }
 
-        /* Partner Logo 占位 */
+        /* Partner Logo */
         .partner-logo {
             transition: all 0.3s ease;
-            filter: grayscale(100%);
-            opacity: 0.7;
+            opacity: 0.95;
         }
 
         .partner-logo:hover {
-            filter: grayscale(0%);
             opacity: 1;
-            transform: translateY(-2px);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 28px -12px rgba(30, 58, 138, 0.25);
+        }
+
+        .partner-logo img {
+            max-height: 56px;
+            width: auto;
+            object-fit: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .partner-logo:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (min-width: 768px) {
+            .partner-logo img {
+                max-height: 64px;
+            }
         }
 
         /* 顶部导航汉堡菜单 */
@@ -648,43 +669,42 @@
 
             <!-- Partner Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-6 reveal">
-                <!-- 8个占位 Logo -->
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-ship text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="jpanpost.png" alt="日本邮政" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">日本邮政</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-plane-up text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="sagawa.png" alt="佐川急便" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">佐川急便</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-truck-fast text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="yamato.png" alt="雅玛多运输" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">雅玛多运输</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-warehouse text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="zhongwaiyun.png" alt="中外运" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">中外运</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-globe text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="shunfeng.png" alt="顺丰速运" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">顺丰速运</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-box-open text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="yunda.png" alt="韵达快运" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">韵达快运</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-industry text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="suyouda.png" alt="速邮达" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">速邮达</span>
                 </div>
-                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center hover:border-brand-600 hover:shadow-soft">
-                    <i class="fas fa-dolly text-3xl text-slate-400 mb-2"></i>
-                    <span class="text-xs md:text-sm text-slate-500 font-medium tracking-wider">Partner Logo</span>
+                <div class="partner-logo bg-white rounded-xl border border-slate-200 h-28 md:h-32 flex flex-col items-center justify-center px-3 hover:border-brand-600 hover:shadow-soft">
+                    <img src="konoike.png" alt="鸿池运输" loading="lazy" />
+                    <span class="text-[10px] md:text-xs text-slate-500 font-medium tracking-wider mt-1.5">鸿池运输</span>
                 </div>
             </div>
 
             <p class="text-center text-xs text-slate-400 mt-10 tracking-widest">
-                * Logo仅作示意，实际合作伙伴以正式签约为准
+                * 所展示 Logo 为各合作方注册商标，实际合作伙伴以正式签约为准
             </p>
         </div>
     </section>
